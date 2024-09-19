@@ -4,6 +4,7 @@ import math
 import pandas as pd
 import numpy as np
 from scipy.spatial.transform import Rotation as R
+import os
 
 
 # Function to convert .txt file from TMM to a .trc file
@@ -113,3 +114,42 @@ def writeTRC(data, file):
             file.write("\t%f" % data["Data"][i][l])
 
         file.write("\n")
+
+
+# Function for using OpenSim API to scale a model based on marker positions
+def run_osim_scale_tool(scale_settings_template_file, template_model, static_pose_time, trc_file_name, subject_dir):
+
+    trc_file = os.path.join('TRC_Position_Data', trc_file_name)
+
+    # Set time range of the moment the subject performed the static pose
+    time_range = osim.ArrayDouble()
+    time_range.set(0, static_pose_time)
+    time_range.set(1, static_pose_time + 0.01)
+
+    # Initiate the scale tool
+    scale_tool = osim.ScaleTool(scale_settings_template_file)   # Template file to work from
+    scale_tool.getGenericModelMaker().setModelFileName(template_model)  # Name of input model
+
+    # Define settings for the scaling step
+    model_scaler = scale_tool.getModelScaler()
+    model_scaler.setApply(True)
+    model_scaler.setMarkerFileName(trc_file) # Marker file used for scaling
+    model_scaler.setTimeRange(time_range) # Time range of the static pose
+    model_scaler.setOutputModelFileName(subject_dir + r'\das3_scaled_only.osim')   # Name of the scaled model (before marker adjustment)
+    model_scaler.setOutputScaleFileName(subject_dir + r'\Scaling_Factors_OMC.xml') # Outputs scaling factor results
+
+    # Define settings for the marker adjustment step
+    marker_placer = scale_tool.getMarkerPlacer()
+    marker_placer.setApply(True)
+    marker_placer.setTimeRange(time_range) # Time range of the static pose
+    marker_placer.setMarkerFileName(trc_file) # Marker file used for scaling
+    marker_placer.setOutputMotionFileName(subject_dir + r'\Static.mot')    # Saves the coordinates of the estimated static pose
+    marker_placer.setOutputModelFileName(subject_dir + r'\das3_scaled_and_placed.osim')    # Name of the final scaled model
+    # marker_placer.setMaxMarkerMovement(-1)    # Maximum amount of movement allowed in marker data when averaging
+
+    # Save adjusted scale settings
+    scale_tool.printToXML(subject_dir + r'\Scale_Settings_OMC.xml')
+
+    # Run the scale tool
+    scale_tool.run()
+

@@ -1,0 +1,34 @@
+[2024-09-19 18:05:54.744] [info] Processing subject Right-scaled...
+[2024-09-19 18:05:54.744] [info] Step 1: Loading generic model
+[2024-09-19 18:05:54.788] [info] Loaded model DAS3 from file c:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\OMC Reference Kinematics\OMC_model_das3.osim
+[2024-09-19 18:05:54.806] [info] Step 2: Scaling generic model
+[2024-09-19 18:05:55.018] [info] Loaded marker file C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\OMC Reference Kinematics\TRC_Position_Data\P001_CP_marker_pos.trc (23 markers, 10809 frames)
+[2024-09-19 18:05:55.018] [info] Measurement 'Humerus'
+[2024-09-19 18:05:55.019] [info] 	pair 0 (AA, EL): model = 0.314718, experimental = 0.328101
+[2024-09-19 18:05:55.019] [info] 	pair 1 (AA, EM): model = 0.319218, experimental = 0.335808
+[2024-09-19 18:05:55.019] [info] 	overall scale factor = 1.04725
+[2024-09-19 18:05:55.019] [info] Measurement 'Forearm'
+[2024-09-19 18:05:55.019] [info] 	pair 0 (EM, RS): model = 0.256119, experimental = 0.283941
+[2024-09-19 18:05:55.019] [info] 	pair 1 (EL, US): model = 0.257027, experimental = 0.265955
+[2024-09-19 18:05:55.019] [info] 	overall scale factor = 1.07168
+[2024-09-19 18:05:55.019] [info] Measurement 'Thorax_Wdth'
+[2024-09-19 18:05:55.019] [info] 	pair 0 (C7, AA): model = 0.189413, experimental = 0.210890
+[2024-09-19 18:05:55.019] [info] 	pair 1 (IJ, AA): model = 0.211112, experimental = 0.231629
+[2024-09-19 18:05:55.019] [info] 	overall scale factor = 1.10528
+[2024-09-19 18:05:55.019] [info] Measurement 'Thorax_Length'
+[2024-09-19 18:05:55.019] [info] 	pair 0 (C7, T8): model = 0.227844, experimental = 0.252251
+[2024-09-19 18:05:55.019] [info] 	pair 1 (IJ, PX): model = 0.13648, experimental = 0.211923
+[2024-09-19 18:05:55.019] [info] 	overall scale factor = 1.32995
+[2024-09-19 18:05:55.019] [info] Measurement 'Thorax_Depth'
+[2024-09-19 18:05:55.019] [info] 	pair 0 (IJ, C7): model = 0.135471, experimental = 0.141122
+[2024-09-19 18:05:55.019] [info] 	pair 1 (PX, T8): model = 0.191962, experimental = 0.254101
+[2024-09-19 18:05:55.019] [info] 	overall scale factor = 1.18271
+[2024-09-19 18:05:55.090] [info] Wrote model file 'P001\das3_scaled_only.osim' from model.
+[2024-09-19 18:05:55.091] [info] Wrote scale file 'P001\Scaling_Factors_OMC.xml' for model Right-scaled.
+[2024-09-19 18:05:55.091] [info] Step 3: Placing markers on model
+[2024-09-19 18:06:03.776] [info] Loaded marker file C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\OMC Reference Kinematics\TRC_Position_Data\P001_CP_marker_pos.trc (23 markers, 10809 frames)
+[2024-09-19 18:06:03.779] [info] Averaged frames from time 30.0 to 30.01 in C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\OMC Reference Kinematics\TRC_Position_Data\P001_CP_marker_pos.trc (frames 3000 to 3001)
+[2024-09-19 18:06:03.779] [info] Deleted 0 unused markers from model Right-scaled.
+[2024-09-19 18:06:03.805] [info] Frame at (t = 30.0):	 total squared error = 0.00851009, marker error: RMS = 0.0291721, max = 0.0649185 (T8)
+[2024-09-19 18:06:03.805] [info] Moved markers in model Right-scaled to match locations in marker file 'C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\OMC Reference Kinematics\TRC_Position_Data\P001_CP_marker_pos.trc'.
+[2024-09-19 18:06:03.829] [info] Wrote model file 'P001\das3_scaled_and_placed.osim' from model Right-scaled.

@@ -9,7 +9,6 @@ from constants_OMC import OMC_dir
 from constants_OMC import raw_data_dir
 from constants_OMC import trc_dir
 
-
 from os.path import join
 from os import makedirs
 from tkinter.filedialog import askdirectory, askopenfilename
@@ -27,7 +26,7 @@ def run_preprocess(subject_code, trial_name, test):
     else:
         # Define some directories and file names
         input_file_name = subject_code + '_' + trial_name + r' - Report1 - Marker_Traj.txt'
-        output_file_name = trial_name + '_marker_pos.trc'
+        output_file_name = subject_code + '_' + trial_name + '_marker_pos.trc'
         input_file_path = join(raw_data_dir, input_file_name)
         output_file_path = join(trc_dir, output_file_name)
 
