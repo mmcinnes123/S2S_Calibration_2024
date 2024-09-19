@@ -153,3 +153,61 @@ def run_osim_scale_tool(scale_settings_template_file, template_model, static_pos
     # Run the scale tool
     scale_tool.run()
 
+
+# Function to use the OpenSim API inverse kinematics tool
+def run_osim_OMC_IK_tool(IK_settings_template_file, trim_bool, start_time, end_time,
+               results_directory, marker_file_name, scaled_model_file_name):
+
+    # Instantiate an InverseKinematicsTool from template
+    IK_tool = osim.InverseKinematicsTool(IK_settings_template_file)
+
+    IK_tool.setName('OMC')
+    IK_tool.set_model_file(scaled_model_file_name)
+    IK_tool.set_marker_file(marker_file_name)
+    IK_tool.set_results_directory(results_directory)
+    IK_tool.setOutputMotionFileName(results_directory + r'\OMC_IK_results.mot')
+    IK_tool.set_report_marker_locations(False)
+    IK_tool.set_report_errors(True)
+    if trim_bool == True:
+        IK_tool.set_time_range(0, start_time)
+        IK_tool.set_time_range(1, end_time)
+
+    # Update the settings in a setup file
+    IK_tool.printToXML(results_directory + r'\IK_Settings.xml')
+
+    # Run IK
+    IK_tool.run()
+
+
+# Function to use the OpenSim API analyze tool
+def run_analyze_tool(analyze_settings_template_file, results_dir, model_file_path, mot_file_path, start_time, end_time):
+
+    analyze_Tool = osim.AnalyzeTool(analyze_settings_template_file)
+    analyze_Tool.setModelFilename(model_file_path)
+    analyze_Tool.setName("analyze")
+    analyze_Tool.setCoordinatesFileName(mot_file_path)
+    analyze_Tool.setStartTime(start_time)
+    analyze_Tool.setFinalTime(end_time)
+    analyze_Tool.setResultsDir(results_dir)
+    analyze_Tool.printToXML(results_dir + r'\Analyse_Settings.xml')     # Save the analysis settings to xml
+
+    # Read the saved analysis settings to run the tool (had to do this to get it to read model file correctly)
+    new_analyze_Tool = osim.AnalyzeTool(results_dir + r'\Analyse_Settings.xml')
+    print('Running Analyze Tool...')
+    new_analyze_Tool.run()
+    print('Analyze Tool run finished.')
+
+
+# Function to calculate the RMSE marker error from the error report file
+def find_marker_error(results_dir):
+
+    marker_error_file = results_dir + r"\OMC_ik_marker_errors.sto"
+    error_table = osim.TimeSeriesTable(marker_error_file)
+    RMSE_column = error_table.getDependentColumn("marker_error_RMS").to_numpy()
+    average_RMSE = np.round(np.mean(RMSE_column), 4)
+
+    # Save value to file
+    message = "Average RMSE is: " + str(average_RMSE) + " m"
+    f = open(results_dir + r"\Marker_RMSE.txt", "w")
+    f.write(message)
+    f.close()

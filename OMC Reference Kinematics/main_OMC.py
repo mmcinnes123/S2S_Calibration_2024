@@ -1,7 +1,7 @@
 
 from preprocess_OMC import run_preprocess
 from scale_model_OMC import run_scale_model
-# from OMC_IK import run_OMC_IK
+from inverse_kinematics_OMC import run_OMC_IK
 
 
 """ PREPROCESS """
@@ -26,7 +26,7 @@ if preprocess:
 
 """ SCALE MODEL """
 
-scale_model = True
+scale_model = False
 if scale_model:
 
     # Choose which subjects to process
@@ -44,22 +44,22 @@ if scale_model:
         run_scale_model(subject_code, static_time_dict, test=False)
 
 
-# """ RUN IK """
-# # Calculate joint kinematics using the calibrated model and marker data from a certain trial
-#
-# IK = False
-# if IK:
-#
-#     # Choose which subjects to process
-#     subject_code_list = [f'P{str(i).zfill(3)}' for i in range(1, 2)]
-#
-#     # Choose which movement trials to process
-#     trial_name_list = ['CP', 'JA_Slow', 'ADL']
-#     # trial_name_list = ['CP', 'JA_Slow', 'JA_Fast', 'ROM', 'ADL']
-#
-#     # Iterate through the collection of subjects and movement types
-#     for subject_code in subject_code_list:
-#
-#         for trial_name in trial_name_list:
-#
-#             run_OMC_IK(subject_code, trial_name, run_analysis=True, test=False)
+""" RUN IK """
+# Calculate joint kinematics using the calibrated model and marker data from a certain trial
+
+IK = True
+if IK:
+
+    # Choose which subjects to process
+    subject_code_list = [f'P{str(i).zfill(3)}' for i in range(1, 2)]
+
+    # Choose which movement trials to process
+    trial_name_list = ['CP', 'JA_Slow', 'ADL']
+    # trial_name_list = ['CP', 'JA_Slow', 'JA_Fast', 'ROM', 'ADL']
+
+    # Iterate through the collection of subjects and movement types
+    for subject_code in subject_code_list:
+
+        for trial_name in trial_name_list:
+
+            run_OMC_IK(subject_code, trial_name, run_analysis=True, test=False)
