@@ -7,11 +7,11 @@ from inverse_kinematics_OMC import run_OMC_IK
 """ PREPROCESS """
 # Converts .txt file from TMM to a .trc file in correct format for OpenSim
 
-preprocess = False
+preprocess = True
 if preprocess:
 
     # Choose which subjects to process
-    subject_code_list = [f'P{str(i).zfill(3)}' for i in range(1, 21)]
+    subject_code_list = [f'P{str(i).zfill(3)}' for i in range(3, 21)]
 
     # Choose which movement trials to process
     trial_name_list = ['CP', 'JA_Slow', 'JA_Fast', 'ROM', 'ADL']
@@ -26,11 +26,11 @@ if preprocess:
 
 """ SCALE MODEL """
 
-scale_model = False
+scale_model = True
 if scale_model:
 
     # Choose which subjects to process
-    subject_code_list = [f'P{str(i).zfill(3)}' for i in range(1, 2)]
+    subject_code_list = [f'P{str(i).zfill(3)}' for i in range(1, 21)]
 
     # A dict defining the time to use for OMC calibration
     # (these times define the moment in the CP trial at pose: Alt_asst)
@@ -51,7 +51,7 @@ IK = True
 if IK:
 
     # Choose which subjects to process
-    subject_code_list = [f'P{str(i).zfill(3)}' for i in range(1, 2)]
+    subject_code_list = [f'P{str(i).zfill(3)}' for i in range(1, 21)]
 
     # Choose which movement trials to process
     trial_name_list = ['CP', 'JA_Slow', 'ADL']
