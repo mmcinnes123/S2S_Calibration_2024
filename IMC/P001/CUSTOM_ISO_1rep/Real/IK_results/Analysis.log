@@ -1,0 +1,122 @@
+[2024-09-21 16:59:38.526] [info] AbstractTool analyze loading model das3.osim
+[2024-09-21 17:01:45.180] [info] AbstractTool analyze loading model C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\IMC\IMC_model_das3.osim
+[2024-09-21 17:01:45.247] [info] Loaded model DAS3 from file C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\IMC\IMC_model_das3.osim
+[2024-09-21 17:01:45.248] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2024-09-21 17:01:45.248] [warning] Couldn't find file 'ground_spine.vtp'.
+[2024-09-21 17:01:45.248] [warning] Couldn't find file 'ground_skull.vtp'.
+[2024-09-21 17:01:45.248] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2024-09-21 17:01:45.249] [warning] Couldn't find file 'imu_geom.vtp'.
+[2024-09-21 17:01:45.251] [warning] Couldn't find file 'rclavicle.vtp'.
+[2024-09-21 17:01:45.251] [warning] Couldn't find file 'rscapula.vtp'.
+[2024-09-21 17:01:45.251] [warning] Couldn't find file 'imu_geom.vtp'.
+[2024-09-21 17:01:45.251] [warning] Couldn't find file 'rhumerus.vtp'.
+[2024-09-21 17:01:45.251] [warning] Couldn't find file 'rulna.vtp'.
+[2024-09-21 17:01:45.251] [warning] Couldn't find file 'rradius.vtp'.
+[2024-09-21 17:01:45.251] [warning] Couldn't find file 'imu_geom.vtp'.
+[2024-09-21 17:01:45.251] [warning] Couldn't find file 'r_hand.vtp'.
+[2024-09-21 17:01:45.257] [info] No external loads will be applied (external loads file not specified).
+[2024-09-21 17:01:45.271] [info] Loading coordinates from file 'C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\IMC\P001\CUSTOM_ISO_1rep\Real\IK_results\IMU_IK_results.mot'.
+[2024-09-21 17:01:46.609] [warning] Coordinate.setValue:  coordinate SC_y is locked. Unable to change its value.
+[2024-09-21 17:01:46.609] [warning] Coordinate.setValue:  coordinate AC_y is locked. Unable to change its value.
+[2024-09-21 17:01:46.610] [warning] Coordinate.setValue:  coordinate SC_x is locked. Unable to change its value.
+[2024-09-21 17:01:47.184] [info] Found 8166 state vectors with time stamps ranging from 7.01 to 88.66.
+[2024-09-21 17:01:47.184] [info] Executing the analyses from 7.01 to 88.65...
+[2024-09-21 17:02:02.431] [info] Printing results of investigation analyze to C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\IMC\P001\CUSTOM_ISO_1rep\Real\IK_results
+[2024-09-21 17:03:57.513] [info] AbstractTool analyze loading model C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\IMC\IMC_model_das3.osim
+[2024-09-21 17:03:57.548] [info] Loaded model DAS3 from file C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\IMC\IMC_model_das3.osim
+[2024-09-21 17:03:57.549] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2024-09-21 17:03:57.549] [warning] Couldn't find file 'ground_spine.vtp'.
+[2024-09-21 17:03:57.549] [warning] Couldn't find file 'ground_skull.vtp'.
+[2024-09-21 17:03:57.549] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2024-09-21 17:03:57.549] [warning] Couldn't find file 'imu_geom.vtp'.
+[2024-09-21 17:03:57.549] [warning] Couldn't find file 'rclavicle.vtp'.
+[2024-09-21 17:03:57.549] [warning] Couldn't find file 'rscapula.vtp'.
+[2024-09-21 17:03:57.549] [warning] Couldn't find file 'imu_geom.vtp'.
+[2024-09-21 17:03:57.549] [warning] Couldn't find file 'rhumerus.vtp'.
+[2024-09-21 17:03:57.549] [warning] Couldn't find file 'rulna.vtp'.
+[2024-09-21 17:03:57.550] [warning] Couldn't find file 'rradius.vtp'.
+[2024-09-21 17:03:57.550] [warning] Couldn't find file 'imu_geom.vtp'.
+[2024-09-21 17:03:57.550] [warning] Couldn't find file 'r_hand.vtp'.
+[2024-09-21 17:03:57.555] [info] No external loads will be applied (external loads file not specified).
+[2024-09-21 17:03:57.570] [info] Loading coordinates from file 'C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\IMC\P001\CUSTOM_ISO_1rep\Real\IK_results\IMU_IK_results.mot'.
+[2024-09-21 17:03:58.915] [warning] Coordinate.setValue:  coordinate SC_y is locked. Unable to change its value.
+[2024-09-21 17:03:58.915] [warning] Coordinate.setValue:  coordinate AC_y is locked. Unable to change its value.
+[2024-09-21 17:03:58.916] [warning] Coordinate.setValue:  coordinate SC_x is locked. Unable to change its value.
+[2024-09-21 17:03:59.484] [info] Found 8166 state vectors with time stamps ranging from 7.01 to 88.66.
+[2024-09-21 17:03:59.484] [info] Executing the analyses from 7.01 to 88.65...
+[2024-09-21 17:04:13.991] [info] Printing results of investigation analyze to C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\IMC\P001\CUSTOM_ISO_1rep\Real\IK_results
+[2024-09-21 17:04:30.470] [info] AbstractTool analyze loading model C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\IMC\IMC_model_das3.osim
+[2024-09-21 17:04:30.508] [info] Loaded model DAS3 from file C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\IMC\IMC_model_das3.osim
+[2024-09-21 17:04:30.509] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2024-09-21 17:04:30.509] [warning] Couldn't find file 'ground_spine.vtp'.
+[2024-09-21 17:04:30.509] [warning] Couldn't find file 'ground_skull.vtp'.
+[2024-09-21 17:04:30.509] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2024-09-21 17:04:30.509] [warning] Couldn't find file 'imu_geom.vtp'.
+[2024-09-21 17:04:30.509] [warning] Couldn't find file 'rclavicle.vtp'.
+[2024-09-21 17:04:30.510] [warning] Couldn't find file 'rscapula.vtp'.
+[2024-09-21 17:04:30.510] [warning] Couldn't find file 'imu_geom.vtp'.
+[2024-09-21 17:04:30.510] [warning] Couldn't find file 'rhumerus.vtp'.
+[2024-09-21 17:04:30.510] [warning] Couldn't find file 'rulna.vtp'.
+[2024-09-21 17:04:30.510] [warning] Couldn't find file 'rradius.vtp'.
+[2024-09-21 17:04:30.510] [warning] Couldn't find file 'imu_geom.vtp'.
+[2024-09-21 17:04:30.510] [warning] Couldn't find file 'r_hand.vtp'.
+[2024-09-21 17:04:30.514] [info] No external loads will be applied (external loads file not specified).
+[2024-09-21 17:04:30.528] [info] Loading coordinates from file 'C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\IMC\P001\CUSTOM_ISO_1rep\Real\IK_results\IMU_IK_results.mot'.
+[2024-09-21 17:04:31.851] [warning] Coordinate.setValue:  coordinate SC_y is locked. Unable to change its value.
+[2024-09-21 17:04:31.851] [warning] Coordinate.setValue:  coordinate AC_y is locked. Unable to change its value.
+[2024-09-21 17:04:31.852] [warning] Coordinate.setValue:  coordinate SC_x is locked. Unable to change its value.
+[2024-09-21 17:04:32.408] [info] Found 8166 state vectors with time stamps ranging from 7.01 to 88.66.
+[2024-09-21 17:04:32.409] [info] Executing the analyses from 7.01 to 88.65...
+[2024-09-21 17:04:47.553] [info] Printing results of investigation analyze to C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\IMC\P001\CUSTOM_ISO_1rep\Real\IK_results
+[2024-09-21 17:05:21.428] [info] AbstractTool analyze loading model C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\IMC\IMC_model_das3.osim
+[2024-09-21 17:05:21.463] [info] Loaded model DAS3 from file C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\IMC\IMC_model_das3.osim
+[2024-09-21 17:05:21.464] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2024-09-21 17:05:21.464] [warning] Couldn't find file 'ground_spine.vtp'.
+[2024-09-21 17:05:21.464] [warning] Couldn't find file 'ground_skull.vtp'.
+[2024-09-21 17:05:21.465] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2024-09-21 17:05:21.465] [warning] Couldn't find file 'imu_geom.vtp'.
+[2024-09-21 17:05:21.465] [warning] Couldn't find file 'rclavicle.vtp'.
+[2024-09-21 17:05:21.465] [warning] Couldn't find file 'rscapula.vtp'.
+[2024-09-21 17:05:21.465] [warning] Couldn't find file 'imu_geom.vtp'.
+[2024-09-21 17:05:21.465] [warning] Couldn't find file 'rhumerus.vtp'.
+[2024-09-21 17:05:21.465] [warning] Couldn't find file 'rulna.vtp'.
+[2024-09-21 17:05:21.465] [warning] Couldn't find file 'rradius.vtp'.
+[2024-09-21 17:05:21.465] [warning] Couldn't find file 'imu_geom.vtp'.
+[2024-09-21 17:05:21.465] [warning] Couldn't find file 'r_hand.vtp'.
+[2024-09-21 17:05:47.166] [info] Loaded model IMU_Calibrated_das from file C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\IMC\P001\CUSTOM_ISO_1rep\Real\Calibrated Model\Calibrated_model_CUSTOM_ISO_1rep.osim
+[2024-09-21 17:05:47.167] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2024-09-21 17:05:47.167] [warning] Couldn't find file 'ground_spine.vtp'.
+[2024-09-21 17:05:47.167] [warning] Couldn't find file 'ground_skull.vtp'.
+[2024-09-21 17:05:47.167] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2024-09-21 17:05:47.167] [warning] Couldn't find file 'imu_geom.vtp'.
+[2024-09-21 17:05:47.167] [warning] Couldn't find file 'rclavicle.vtp'.
+[2024-09-21 17:05:47.167] [warning] Couldn't find file 'rscapula.vtp'.
+[2024-09-21 17:05:47.167] [warning] Couldn't find file 'imu_geom.vtp'.
+[2024-09-21 17:05:47.167] [warning] Couldn't find file 'rhumerus.vtp'.
+[2024-09-21 17:05:47.167] [warning] Couldn't find file 'rulna.vtp'.
+[2024-09-21 17:05:47.168] [warning] Couldn't find file 'rradius.vtp'.
+[2024-09-21 17:05:47.168] [warning] Couldn't find file 'imu_geom.vtp'.
+[2024-09-21 17:05:47.168] [warning] Couldn't find file 'r_hand.vtp'.
+[2024-09-21 17:05:47.170] [info] AbstractTool analyze loading model C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\IMC\IMC_model_das3.osim
+[2024-09-21 17:05:47.204] [info] Loaded model DAS3 from file C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\IMC\IMC_model_das3.osim
+[2024-09-21 17:05:47.205] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2024-09-21 17:05:47.205] [warning] Couldn't find file 'ground_spine.vtp'.
+[2024-09-21 17:05:47.205] [warning] Couldn't find file 'ground_skull.vtp'.
+[2024-09-21 17:05:47.205] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2024-09-21 17:05:47.205] [warning] Couldn't find file 'imu_geom.vtp'.
+[2024-09-21 17:05:47.205] [warning] Couldn't find file 'rclavicle.vtp'.
+[2024-09-21 17:05:47.205] [warning] Couldn't find file 'rscapula.vtp'.
+[2024-09-21 17:05:47.205] [warning] Couldn't find file 'imu_geom.vtp'.
+[2024-09-21 17:05:47.205] [warning] Couldn't find file 'rhumerus.vtp'.
+[2024-09-21 17:05:47.205] [warning] Couldn't find file 'rulna.vtp'.
+[2024-09-21 17:05:47.206] [warning] Couldn't find file 'rradius.vtp'.
+[2024-09-21 17:05:47.206] [warning] Couldn't find file 'imu_geom.vtp'.
+[2024-09-21 17:05:47.206] [warning] Couldn't find file 'r_hand.vtp'.
+[2024-09-21 17:05:47.210] [info] No external loads will be applied (external loads file not specified).
+[2024-09-21 17:05:47.224] [info] Loading coordinates from file 'C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\IMC\P001\CUSTOM_ISO_1rep\Real\IK_results\IMU_IK_results.mot'.
+[2024-09-21 17:05:48.538] [warning] Coordinate.setValue:  coordinate SC_y is locked. Unable to change its value.
+[2024-09-21 17:05:48.538] [warning] Coordinate.setValue:  coordinate AC_y is locked. Unable to change its value.
+[2024-09-21 17:05:48.539] [warning] Coordinate.setValue:  coordinate SC_x is locked. Unable to change its value.
+[2024-09-21 17:05:49.087] [info] Found 8166 state vectors with time stamps ranging from 7.01 to 88.66.
+[2024-09-21 17:05:49.087] [info] Executing the analyses from 7.01 to 88.65...
+[2024-09-21 17:06:03.463] [info] Printing results of investigation analyze to C:\Users\r03mm22\Documents\Protocol_Testing\S2S_Calibration_2024\IMC\P001\CUSTOM_ISO_1rep\Real\IK_results
