@@ -9,7 +9,8 @@ Say what all poses are: N_asst, Alt_asst, self, Alt2 etc.
 This section of the repo is for calculating joint kinematics from the recorded marker position data, using an OpenSim 
 model and OpenSim inverse kinematics.
 
-There are three basic steps: 
+There are three basic steps:
+(These functions can be run separately, or everything can be batch run from `main_OMC.py`.)
 1. Create a .trc file - `create_trc_OMC.py` - simply copy and pastes the raw data which is in a .txt file, into a .trc 
 file with all the right headings and formatting so that OpenSim can read it without complaining.
 2. Create a scaled model - `scale_model_OMC.py` - for each individual, using the OpenSim scale model tool, adjusts the 
@@ -21,4 +22,6 @@ run OpenSim's inverse kinematics tool, which calculates the pose of the model on
 of this step is the .mot _joint kinematics_ file, but also a .sto 'analysis' file, which gives us access to the time-series
 _body kinematics_ which later allows us to calculate humero-thoracic angles, not gleno-humeral.
 
-These functions can be run separately, or everything can be batch run from `main_OMC.py`, 
+
+#### IMC 
+This section of the repo is for handling the IMU data, using OpenSim functions and custom S2S calibrations.
