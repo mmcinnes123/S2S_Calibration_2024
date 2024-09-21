@@ -1,5 +1,5 @@
 
-from preprocess_OMC import run_preprocess
+from create_trc_OMC import run_createtrc
 from scale_model_OMC import run_scale_model
 from inverse_kinematics_OMC import run_OMC_IK
 
@@ -7,8 +7,8 @@ from inverse_kinematics_OMC import run_OMC_IK
 """ PREPROCESS """
 # Converts .txt file from TMM to a .trc file in correct format for OpenSim
 
-preprocess = True
-if preprocess:
+createtrc = True
+if createtrc:
 
     # Choose which subjects to process
     subject_code_list = [f'P{str(i).zfill(3)}' for i in range(3, 21)]
@@ -21,7 +21,7 @@ if preprocess:
 
         for trial_name in trial_name_list:
 
-            run_preprocess(subject_code, trial_name, test=False)
+            run_createtrc(subject_code, trial_name, test=False)
 
 
 """ SCALE MODEL """

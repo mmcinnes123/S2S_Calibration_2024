@@ -11,7 +11,7 @@ from os import makedirs
 from tkinter.filedialog import askdirectory, askopenfilename
 
 
-def run_preprocess(subject_code, trial_name, test):
+def run_createtrc(subject_code, trial_name, test):
 
     # Input settings manually if running single test
     if test:
@@ -36,6 +36,6 @@ def run_preprocess(subject_code, trial_name, test):
 
 
 if __name__ == '__main__':
-    run_preprocess(subject_code=None, trial_name=None, test=True)
+    run_createtrc(subject_code=None, trial_name=None, test=True)
 
 
