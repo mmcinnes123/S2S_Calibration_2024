@@ -30,7 +30,8 @@ scale_model = True
 if scale_model:
 
     # Choose which subjects to process
-    subject_code_list = [f'P{str(i).zfill(3)}' for i in range(1, 21)]
+    subject_code_list = ['P001']
+    # subject_code_list = [f'P{str(i).zfill(3)}' for i in range(1, 21)] # Or run the function for all subjects
 
     # A dict defining the time to use for OMC calibration
     # (these times define the moment in the CP trial at pose: Alt_asst)
@@ -51,11 +52,12 @@ IK = True
 if IK:
 
     # Choose which subjects to process
-    subject_code_list = [f'P{str(i).zfill(3)}' for i in range(1, 21)]
+    subject_code_list = ['P001']
+    # subject_code_list = [f'P{str(i).zfill(3)}' for i in range(1, 21)]   # Or run the function for all subjects
 
     # Choose which movement trials to process
     trial_name_list = ['CP', 'JA_Slow', 'ADL']
-    # trial_name_list = ['CP', 'JA_Slow', 'JA_Fast', 'ROM', 'ADL']
+    # trial_name_list = ['CP', 'JA_Slow', 'JA_Fast', 'ROM', 'ADL']  # Or run the function for all trials
 
     # Iterate through the collection of subjects and movement types
     for subject_code in subject_code_list:

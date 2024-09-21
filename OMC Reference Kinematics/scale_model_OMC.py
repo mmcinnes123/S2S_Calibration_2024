@@ -6,7 +6,6 @@
 from helpers_OMC import run_osim_scale_tool
 
 from os.path import join
-
 from os import makedirs
 import opensim as osim
 from tkinter.filedialog import askdirectory, askopenfilename
@@ -17,7 +16,7 @@ from tkinter.filedialog import askdirectory, askopenfilename
 
 def run_scale_model(subject_code, static_time_dict, test):
 
-    from constants_OMC import scale_settings_template_file, trc_dir, OMC_dir
+    from constants_OMC import scale_settings_template_file, OMC_dir
 
     # Input settings manually if running single test
     if test:

@@ -1,6 +1,6 @@
 # This script performs marker-based IK with OpenSim API
 # Input is a .trc file and a scaled OpenSim model
-# Output is an .mot file
+# Output is an .mot file (and 'analysis' .sto files if the analysis function is run)
 
 from helpers_OMC import run_osim_OMC_IK_tool, find_marker_error, run_analyze_tool
 from constants_OMC import IK_settings_template_file, sample_rate, analyze_settings_template_file, OMC_dir, trc_dir

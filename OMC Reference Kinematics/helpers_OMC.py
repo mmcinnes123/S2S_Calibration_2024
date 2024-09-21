@@ -1,9 +1,10 @@
+# This script contains all the helper functions to be used to create OMC reference kinematics
+# from The Motion Monitor marker trajectory .txt files.
 
 import opensim as osim
 import math
 import pandas as pd
 import numpy as np
-from scipy.spatial.transform import Rotation as R
 import os
 
 

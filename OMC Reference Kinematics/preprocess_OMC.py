@@ -4,10 +4,7 @@
 # Output is a .trc file
 
 from helpers_OMC import MM_2_trc
-from constants_OMC import sample_rate
-from constants_OMC import OMC_dir
-from constants_OMC import raw_data_dir
-from constants_OMC import trc_dir
+from constants_OMC import sample_rate, OMC_dir, raw_data_dir, trc_dir
 
 from os.path import join
 from os import makedirs
