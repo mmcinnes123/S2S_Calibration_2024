@@ -1,6 +1,9 @@
 The repository holds the data and code used to support worked published here: link
 
 
+Change the parent dict in both `constants_OMC.py` and `constants_IMC.py`. 
+Note that 'pre-processing' has been done - i.e. creating .stos and .trcs
+Say what all poses are: N_asst, Alt_asst, self, Alt2 etc.
 
 #### OMC Reference Kinematics 
 This section of the repo is for calculating joint kinematics from the recorded marker position data, using an OpenSim 
